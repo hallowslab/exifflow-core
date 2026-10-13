@@ -1,0 +1,15 @@
+[package]
+name = "exifflow-core"
+version = "0.0.1"
+edition = "2024"
+authors = ["HallowsTechLabs hallow.tech.lab@gmail.com"]
+description = "Shared upload plumbing for ExifFlow transfer front-ends: event bus, durable record store, and path utilities."
+
+[dependencies]
+tokio = { version = "1", features = ["sync"] }
+serde = { version = "1", features = ["derive"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+rand = "0.10.2"
+
+[dev-dependencies]
+tempfile = "3.27.0"
